@@ -96,10 +96,17 @@ body {
 
 .tg-foto {
   text-align: center;
+  width: 100px;
+  height: 100px;
 }
 
 .fotoTabla {
-  width: 100px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+/*  width: 100px;
+  height: 100px;*/
 }
 
 .fotoTabla:hover {
