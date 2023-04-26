@@ -8,10 +8,8 @@ body {
   display: flex; 
   align-items: center; 
   justify-content: space-between;
-  max-width: 1200px; 
   margin: 0 auto;
   padding: 0 10px;
-  
 }
 
 .titulo {
@@ -42,6 +40,7 @@ body {
 .tg-wrap {
   padding-top: 20px;
   display: flex; 
+
 }
 
 .tg  {
@@ -49,7 +48,7 @@ body {
   border-spacing: 0;
   margin: 0px auto;
   background-color: #144474;
-
+  box-shadow: 2px 2px 4px #4c4b4b;
 }
 
 .tg td {
@@ -105,8 +104,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-/*  width: 100px;
-  height: 100px;*/
 }
 
 .fotoTabla:hover {
