@@ -1,21 +1,35 @@
 body {
-  background-color: #1E1E1E;
-  padding: 10px;
-  color: #f7f2f2;
+  background: linear-gradient(45deg,rgb(255, 224, 50),gold,rgb(177, 121, 0),rgb(255, 227, 69),gold,rgb(255, 224, 50),gold,rgb(177, 121, 0),rgb(255, 227, 69),gold,rgb(255, 224, 50),gold,rgb(177, 121, 0),rgb(255, 227, 69),gold);
+  background: url("ono.jpg");
+  background-size: cover;
+  padding: 0;
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000,0 0 10px #000000,0 0 15px #000000,0 0 20px #000000;
+  margin: 0;
 }
 
 .titleContainer {
   display: flex; 
+  background: linear-gradient(180deg, black,#141820);
+  background-size: cover;
   align-items: center; 
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 10px;
+  height: 80px;
+  padding: 7px;
+  border-width: 4px;
+  border-color: #ffffff;
+
 }
 
 .titulo {
   font-size: 40px;
   text-align: center;
   width: 100%;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 12px rgb(255, 206, 100), 0 0 15px rgb(255, 219, 185),
+               0 0 20px rgb(255, 163, 76), 0 0 25px rgb(253, 162, 42), 0 0 30px rgb(255, 155, 24);
+               /*text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 12px rgb(192, 187, 177), 0 0 15px rgb(160, 155, 150),
+               0 0 20px rgb(211, 211, 211), 0 0 25px rgb(148, 144, 139), 0 0 30px rgb(163, 163, 163);*/
 }
 
 .logo {
@@ -38,45 +52,64 @@ body {
 }
   
 .tg-wrap {
-  padding-top: 20px;
+  padding: 20px;
   display: flex; 
+}
+
+.tg {
+  border-radius: 30px 30px 30px 30px;
+  border-spacing: 0;
+  backdrop-filter: blur(5px);
+  margin: auto;
+  background: radial-gradient( rgba(0, 0, 0, .2), rgba(172, 123, 60, 0.336));
+  /*background: radial-gradient( rgba(0, 0, 0, .2), rgba(104, 104, 104, 0.336));*/
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color:  #141820;
 
 }
 
-.tg  {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 0px auto;
-  background-color: #144474;
-  box-shadow: 2px 2px 4px #4c4b4b;
+
+.tg tr:last-child td:first-child{
+  border-radius: 0 0 0 30px;
+}
+.tg tr:last-child td:last-child{
+  border-radius: 0 0 30px 0;
+}
+.tg tr:first-child th:first-child {
+  border-radius: 30px 0 0 0;
+}
+.tg tr:first-child th:last-child{
+  border-radius: 0 30px 0 0;
 }
 
 .tg td {
-  border-color:  #D5B895;
+  border-color:  #141820;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   font-size: 20px;
   overflow: hidden;
   padding: 10px 10px;
-  word-break: normal;
-  
+  word-break: normal; 
 }
 
 .tgCabezera {
-  border-color:  #D5B895;
+  border-color: #141820;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
 
+
 .tg .tg-0lax {
-  text-align: left;
-  vertical-align: top
+  text-align: center;
+  vertical-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -108,5 +141,4 @@ body {
 
 .fotoTabla:hover {
   filter: grayscale(100%);
-
 }
