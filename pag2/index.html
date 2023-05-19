@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Agregar usuarios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div class="titleContainer">
+      <h1 class="titulo">
+        Agregar Usuarios
+      </h1>
+      <a href="http://www.ips.edu.ar" target="_blank">
+        <img src="Ipslogo.png" alt="Logo del Poli" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Gmail</th>
+              <th>DNI</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr taskid="1">
+              <td>1</td>
+              <td>nombre apellido</td>
+              <td>nombreapellido@gmail.com</td>
+              <td>4600000</td>
+              <td class="align-middle">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="add-user-section">
+        <h2>Agregar nuevo usuario</h2>
+        <form>
+          <input type="hidden" id="userId">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name">
+          <label for="gmail">Gmail:</label>
+          <input type="text" id="gmail" name="gmail">
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" name="dni">
+        </form>
+        
+      </div>
+      <div class="search-user-section">
+        <h2>Buscar un<br /> usuario</h2>
+        <form>
+          <label for="search">Buscar:</label>
+          <input type="text" id="search" name="search">
+        </form>
+        <div class="card">
+          <div class="card-header">Resultados</div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">ejemplo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
