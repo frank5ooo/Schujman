@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+
+    <!-- NAVIGATION  -->
+    <nav class="titleContainer">
+      <h1>Ajax</h1>
+      <div class="container-input">
+        <input type="search" placeholder="Busqueda por apellido" name="search" class="input" id="search">
+      </div>
+    </nav>
+    
+    <div class="resultados" id="task-result">
+      <ul id="container"></ul>
+    </div>
+    
+      <div class="card">
+        <div class="card-body">
+          <form class="form" id="task-form">
+            <p class="title">Ingrese el usuario</p>
+              <div class="flex">
+                <label class="form-group">
+                  <input required="" type="text" id="name" placeholder="Nombre" type="text" class="input1" class="form-control">
+                </label>
+                <label class="form-group">
+                  <input required="" type="text" id="apellido" placeholder="Apellido" class="input1" class="form-control">
+                </label>
+              </div>  
+                        
+              <label class="form-group">
+                <input required="" type="number" id="dni" placeholder="Dni" class="input1" class="form-control">
+              </label> 
+              <label class="form-group">
+                <input required="" type="email" id="mail" placeholder="Mail" class="input1" class="form-control" >
+              </label>
+
+              <input type="hidden" id="taskId">
+
+              <button class="submit">
+                Submit
+              </button>
+          </form>
+        </div>
+      </div>
+  
+
+    <!-- TABLE  -->
+    <div>
+      <table class="tg">
+        <thead>
+          <tr>
+            <td class="tgCabezera">Id</td>
+            <td class="tgCabezera">Nombre</td>
+            <td class="tgCabezera">Apellido</td>
+            <td class="tgCabezera">Dni</td>
+            <td class="tgCabezera">Mail</td>
+            <td class="tgCabezera">Borrar</td>
+            <td class="tgCabezera">Editar</td>
+          </tr>
+        </thead>
+        <tbody id="tasks" class="tg-0lax"></tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
